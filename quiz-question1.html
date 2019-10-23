@@ -8,8 +8,29 @@
     <link rel="stylesheet" type="text/css" href="./main.css">
 </head>
 <body>
+    <main>
     <form class="question-form" action="/some-server-endpoint" method="post">
-
+        <fieldset name="question-one" class="question">
+            <label for="question-one" required>How many letters in the English Language?</label>
+            <br>
+            <input type="radio" name="answer-one" id="answer-one-1" value="0">
+            <label for="answer-one-1">30</label>
+            <br>
+            <input type="radio" name="answer-one" id="answer-one-2" value="1">
+            <label for="answer-one-1">26</label>
+            <br>
+            <input type="radio" name="answer-one" id="answer-one-3" value="2">
+            <label for="answer-one-1">25</label>
+            <br>
+            <input type="radio" name="answer-one" id="answer-one-4" value="3">
+            <label for="answer-one-1">23</label>
+            <br>
+        </fieldset>
+        <button class="next-button">Next</button>
     </form>
+    <img src="http://sociolon.com/wp-content/uploads/2019/07/English-flow-1.jpg" alt="Image with English written in big text">
+    </main>
+    <div class="footer-left"><p>Progress: 1/5</p></div>
+    <div class="footer-right"><p>Score Placeholder</p></div>
 </body>
 </html>
