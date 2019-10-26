@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" type="A quiz app about the English language">
+    <title> English Quiz </title>
+    <link rel="stylesheet" type="text/css" href="./main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700,700i&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+            <img src="http://sociolon.com/wp-content/uploads/2019/07/English-flow-1.jpg" alt="Image with English written in big text">
+    </header>
+    <main role="main" class="main-section">
+        <section class="start-quiz">
+        <h1 class="heading">English Quiz</h1>
+        <button class ="start-button">Start The Quiz!</button>
+        </section>
+        <section class="question-box">
+                <form class="question-form">
+                        <fieldset name="question" class="question">
+                        </fieldset>
+                </form>
+        </section>
+        <section class="end-quiz">
+        </section>
+    </main>
+    <footer>
+        <div class="left-footer progress"> <p> Progress: <span class="question-number">0</span>/5 </p> </div>
+        <div class="right-footer score-placeholder"> <p> Score: <span class="score-number">0</span>/5 </p> </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,61 +1,137 @@
 * {
     box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
 }
 
-header, main {
+header {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    background-color: white;
+    box-shadow: 10px 10px black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+img {
+    margin: 0 auto;
+    height: 200px;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    max-width: 800px;
+    background-color: white;
+    box-shadow: 10px 10px black;
+    padding-top: 10px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 100px;
+    max-width: 800px;
+    margin: auto;
+    background-color: white;
+    box-shadow: 10px 10px black;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 30px;
 }
 
 body {
-    padding: 100px 500px;
+    background-image: url(https://i.pinimg.com/originals/67/18/22/671822c2f63dd5f65d8fd15c9710420b.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .left-footer {
     float: left;
-    margin: 50px;
 }
 
 .right-footer {
     float: right;
-    margin: 50px;
 }
 
-.start-button, .retake-button {
+.start-button, .submit-button, .next-button, .restart-button {
     margin-top: 30px;
     height: 50px;
     width: 100px;
+    border-radius: 5px;
+    background-color: rgb(197, 195, 195);
+}
+
+button:hover, button:focus, button:active {
+    border: 1px rgb(28, 28, 112) solid;
+    font-weight: bold;
 }
 
 fieldset {
-    position: relative;
-    right: 300px;
-    margin-top: 100px;
-    text-align: left;
+    margin: auto;
+    margin-left: 200px;
+    margin-right: 200px;
+    padding-top: 30px;
 }
 
-img {
-    height: 300px;
-    float: left;
-    position: relative;
-    bottom: 230px;
-    left: 200px;
+.end-quiz {
+    padding-bottom: 100px;
 }
 
-.next-button {
-    position: relative;
-    bottom: 200px;
-    height: 50px;
-    width: 100px;
+@media only screen and (min-width: 320px) {
+
+    img {
+        height: 100px;
+    }
+    
+    body {
+        font-size: 11px;
+    }
+
+    .start-button, .submit-button, .next-button, .restart-button {
+        width: 50px;
+        height: 25px;
+        text-align: center;
+        font-size: 10px;
+    }
+
 }
 
-.questions-footer {
-    position: relative;
-    bottom: 200px;
+@media only screen and (min-width: 550px) {
+
+    img {
+        height: 150px;
+    }
+
+    body {
+        font-size: 15px;
+    }
 }
 
-.score-placeholder {
-    position: relative;
-    bottom: 150px;
+@media only screen and (min-width: 800px) {
+    img {
+        height: 200px;
+    }
+
+    body {
+        font-size: 17px;
+    }
+
+    .start-button, .submit-button, .next-button, .restart-button {
+        width: 100px;
+        height: 50px;
+        text-align: center;
+    }
 }
