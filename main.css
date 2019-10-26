@@ -59,12 +59,10 @@ body {
 }
 
 .left-footer {
-    display: flex;
     float: left;
 }
 
 .right-footer {
-    display: flex;
     float: right;
 }
 
