@@ -59,10 +59,12 @@ body {
 }
 
 .left-footer {
+    display: flex;
     float: left;
 }
 
 .right-footer {
+    display: flex;
     float: right;
 }
 
@@ -104,7 +106,7 @@ fieldset {
         width: 50px;
         height: 25px;
         text-align: center;
-        font-size: 10px;
+        font-size: 8px;
     }
 
 }
