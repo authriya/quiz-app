@@ -127,9 +127,6 @@ font-size: 5px;
         width: 75;
         height: 30px;
         text-align: center;
-    }
-
-    .start-button {
         font-size: 15px;
     }
 }
@@ -147,6 +144,7 @@ font-size: 5px;
         width: 100px;
         height: 50px;
         text-align: center;
+        font-size: 17px;
     }
 
     .start-button {
